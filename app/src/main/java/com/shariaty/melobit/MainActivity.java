@@ -12,7 +12,6 @@ import android.widget.ImageView;
 
 import com.shariaty.melobit.fragments.SearchFragment;
 import com.shariaty.melobit.fragments.TopHitsFragment;
-
 public class MainActivity extends AppCompatActivity {
     Button tophits;
     ImageView searchbtn;
