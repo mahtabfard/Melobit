@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.shariaty.melobit.fragments.SearchFragment;
+import com.shariaty.melobit.fragments.TopHitsFragment;
 
 public class MainActivity extends AppCompatActivity {
     Button tophits;
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.home_layout, frag).commit();
             }
         });
-
+         tophits.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Fragment frag = new TopHitsFragment();
+                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                 fragmentTransaction.replace(R.id.home_layout, frag).commit();
+             }
+         });
     }
 }
