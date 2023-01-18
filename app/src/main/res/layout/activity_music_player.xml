@@ -9,6 +9,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/backbtn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -46,12 +57,6 @@
             android:layout_margin="4dp"
             android:text="artistname" />
 
-        <TextView
-            android:id="@+id/releasedte"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:text="releasedate" />
     </LinearLayout>
 
     <LinearLayout
@@ -65,57 +70,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:layout_marginTop="10dp"
-        >
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/prebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/prevbtn"
             android:layout_marginLeft="50dp"
-            />
+            android:src="@drawable/prevbtn" />
+
         <ImageView
             android:id="@+id/playbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/playbtn"
             android:layout_marginLeft="80dp"
-            />
+            android:src="@drawable/playbtn" />
+
         <ImageView
             android:id="@+id/nextbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/nextbtn"
             android:layout_marginLeft="80dp"
-            />
+            android:src="@drawable/nextbtn" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        >
-        <ImageView
-            android:id="@+id/lyricsbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/upbtn"
-            android:layout_gravity="center"
 
-            />
-        <TextView
-            android:id="@+id/lyricstxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Lyrics" />
-
-    </LinearLayout>
 </LinearLayout>
 
