@@ -24,7 +24,7 @@ import java.util.List;
 
 public class TopDayFragment extends Fragment {
 
-    RecyclerView recyclerView;
+    RecyclerView recyclerView1;
     ProgressDialog dialog;
     RequestManager manager;
     Context context;
@@ -38,23 +38,23 @@ public class TopDayFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_top_day, container, false);
-        recyclerView = view.findViewById(R.id.topdayrecycler);
+        recyclerView1 = view.findViewById(R.id.topdayrecycler);
         context = view.getContext();
         dialog = new ProgressDialog(context);
         dialog.setTitle("Loading...⌛");
         manager = new RequestManager(context);
-        manager.getFixture_topday(l);
+        manager.getFixture_topday(request);
 
         return view;
     }
-    final Request l = new Request() {
+    final Request request = new Request() {
         @Override
         public void didFetch(List<MelobitData> list, String status) {
             dialog.dismiss();
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL , false));
+            recyclerView1.setHasFixedSize(true);
+            recyclerView1.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL , false));
             RecyclerView.Adapter adapter = new Adapter(context,list);
-            recyclerView.setAdapter(adapter);
+            recyclerView1.setAdapter(adapter);
         }
 
         @Override

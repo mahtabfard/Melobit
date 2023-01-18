@@ -22,7 +22,7 @@ public class Adapter  extends RecyclerView.Adapter<Adapter.CustomeViewHolder> {
     List<MelobitData> songlist;
     public Adapter(Context context, List<MelobitData> songlist){
         this.songlist=songlist;
-        this.context= this.context;
+        this.context= context;
     }
     @NonNull
     @Override

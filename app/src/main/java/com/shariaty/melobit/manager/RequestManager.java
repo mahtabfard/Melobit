@@ -27,7 +27,7 @@ public class RequestManager {
     public RequestManager(Context context) {
         this.context = context;
     }
-    public void getFixture(ResponseListener listener) {
+    public void getFixture(Request listener) {
         Call<MelobitResponse> call = callmelobit.callmelobit();
         try {
             call.enqueue(new Callback<MelobitResponse>() {
