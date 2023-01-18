@@ -8,11 +8,6 @@
     tools:context=".MainActivity"
     android:id="@+id/home_layout"
     >
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,150 +21,13 @@
                 android:padding="8dp"
                 android:text="Melobit"
                 android:textSize="40sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:orientation="horizontal">
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/topbtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Top hits"
-                    android:textSize="17sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/txtnewsongs"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="2"
-                    android:padding="8dp"
-                    android:text="New songs"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/txtseeallnew"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:padding="8dp"
-                    android:text="See all"
-                    android:textSize="20sp" />
-            </LinearLayout>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/newsong_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="123dp"
-                android:scrollbars="horizontal"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txttrendingartists"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="2"
-                    android:padding="8dp"
-                    android:text="Trending Artists"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/txtseeallartists"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:padding="8dp"
-                    android:text="See all"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/artists_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="123dp"
-                android:scrollbars="horizontal"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txttopday"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="2"
-                    android:padding="8dp"
-                    android:text="Top 10 Day Songs"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/txtseeallday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:padding="8dp"
-                    android:text="See all"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/topday_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="123dp"
-                android:scrollbars="horizontal"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txttopweek"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="2"
-                    android:padding="8dp"
-                    android:text="Top 10 Week Songs"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/txtseeallweek"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:padding="8dp"
-                    android:text="See all"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/topweek_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="123dp"
-                android:scrollbars="horizontal"/>
-        </LinearLayout>
-    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -200,4 +58,13 @@
             android:src="@drawable/search_icon"
             />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="449dp" />
 </RelativeLayout>
