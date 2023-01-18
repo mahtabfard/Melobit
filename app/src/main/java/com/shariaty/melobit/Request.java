@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface Request {
     void didFetch(List<MelobitData> list, String status);
+
     void didError(String status);
 }
