@@ -7,23 +7,27 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:id="@+id/home_layout"
-   >
+    android:background="@color/white"
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="693dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            android:orientation="vertical"
+            >
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/txtmelobit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
                 android:text="MeloBit"
-                android:textSize="30sp" />
+             android:fontFamily="sans-serif-smallcaps"
+                android:textSize="30sp"
+                />
 
 
             <LinearLayout
@@ -32,6 +36,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txtartist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -40,8 +45,10 @@
                     android:layout_weight="2"
                     android:padding="8dp"
                     android:text="Trending Artist"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="30sp" />
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txt_seeallartist"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,6 +56,8 @@
                     android:layout_marginTop="8dp"
                     android:padding="8dp"
                     android:text="See all"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -64,6 +73,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txtnewsongs"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -72,9 +82,11 @@
                     android:layout_weight="2"
                     android:padding="8dp"
                     android:text="New songs"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="30sp" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txt_seeallnew"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -82,6 +94,8 @@
                     android:layout_marginTop="8dp"
                     android:padding="8dp"
                     android:text="See all"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:clickable="true"
                     android:textSize="20sp" />
             </LinearLayout>
             <ImageView
@@ -96,6 +110,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txttopday"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -104,9 +119,11 @@
                     android:layout_weight="2"
                     android:padding="8dp"
                     android:text="Top 10 Day"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="30sp" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txt_seealltopday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -114,6 +131,8 @@
                     android:layout_marginTop="8dp"
                     android:padding="8dp"
                     android:text="See all"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:clickable="true"
                     android:textSize="20sp" />
             </LinearLayout>
             <ImageView
@@ -127,9 +146,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txttopweek"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -138,16 +159,20 @@
                     android:layout_weight="2"
                     android:padding="8dp"
                     android:text="Top 10 week"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="30sp" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/txt_seeallweek"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_marginTop="8dp"
                     android:padding="8dp"
+                    android:clickable="true"
                     android:text="See all"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textSize="20sp" />
             </LinearLayout>
             <ImageView
@@ -165,7 +190,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#1F6670"
+        >
 
         <ImageView
             android:id="@+id/btnhome"
@@ -173,9 +200,12 @@
             android:layout_height="30dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:src="@drawable/home_icon" />
+            android:clickable="true"
+            android:src="@drawable/home_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
+            android:clickable="true"
             android:id="@+id/btnsearch"
             android:layout_width="0dp"
             android:layout_height="30dp"

@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SearchFragment">
+    tools:context=".fragments.SearchFragment"
+    android:background="#1F6670"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,6 +23,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="40dp"
+
         >
 
         <ImageView
@@ -32,16 +35,21 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:hint=" Music,Lyrics,Artist,..."
-            android:layout_gravity="center_vertical" />
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_gravity="center_vertical"
+
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="40dp"
+        android:layout_margin="10dp"
         >
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchrecyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

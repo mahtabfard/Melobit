@@ -3,10 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TopWeekFragment">
+    tools:context=".fragments.TopWeekFragment"
+    android:background="#1F6670"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_margin="8dp"
+        android:id="@+id/backbtnweek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/backbtn"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
         android:id="@+id/topweekrecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    </LinearLayout>
 </FrameLayout>
